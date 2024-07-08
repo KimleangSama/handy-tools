@@ -67,7 +67,7 @@ const URLParser = () => {
                         </div>
                     )
                 }))}
-                {urlSearchParams && (
+                {urlSearchParams != null && urlSearchParams != '' && (
                     <div className="flex items-center ml-2">
                         <label className="block w-[110px] text-sm font-medium text-gray-200">Detail</label>
                         <div className="block w-full p-2 text-gray-50 border border-gray-400 rounded-lg bg-[#333333] text-sm disabled">
