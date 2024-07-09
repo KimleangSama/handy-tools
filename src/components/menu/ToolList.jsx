@@ -1,4 +1,5 @@
 import { IoIosKey, IoIosLink } from "react-icons/io";
+import { IoQrCodeOutline } from "react-icons/io5";
 
 export const ToolList = [
     {
@@ -17,11 +18,12 @@ export const ToolList = [
         ],
     },
     {
-        title: "Text",
+        title: "Images & Videos",
         tools: [
             {
-                title: "Text Parser",
-                url: "text-parser",
+                leading: <IoQrCodeOutline size={18} />,
+                title: "QR Code Generator",
+                url: "qr-code",
             },
         ],
     },
