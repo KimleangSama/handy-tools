@@ -1,5 +1,7 @@
 import { IoIosKey, IoIosLink } from "react-icons/io";
 import { IoQrCodeOutline } from "react-icons/io5";
+import { VscSymbolString } from "react-icons/vsc";
+import { IoIosColorPalette } from "react-icons/io";
 
 export const ToolList = [
     {
@@ -15,6 +17,11 @@ export const ToolList = [
                 title: "JWT Parser",
                 url: "jwt-parser",
             },
+            {
+                leading: <VscSymbolString className="text-gray-400" size={18} />,
+                title: "Slugify",
+                url: "slugify",
+            },
         ],
     },
     {
@@ -25,6 +32,11 @@ export const ToolList = [
                 title: "QR Code Generator",
                 url: "qr-code",
             },
+            {
+                leading: <IoIosColorPalette size={18} />,
+                title: "Color Converter",
+                url: "color-converter",
+            }
         ],
     },
 ];

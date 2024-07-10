@@ -7,7 +7,7 @@ const ToolTemplate = ({ title, subtitle, children }) => {
     const [isFav, setIsFav] = useState(localStorage.getItem(title) === 'true' || false)
     const { setIsFavoriteTriggered } = useFavoriteToolStore();
     return (
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 w-7/12">
             <div className="flex justify-between">
                 <h1 className="text-3xl text-gray-300 pr-1.5 py-1.5 border-b">{title}</h1>
                 <button
@@ -33,7 +33,7 @@ const ToolTemplate = ({ title, subtitle, children }) => {
                     }
                 </button>
             </div>
-            <h3 className="text-sm text-gray-300">{subtitle}</h3>
+            <h3 className="text-sm text-gray-300 items-start">{subtitle}</h3>
             <div className="my-2 p-4 rounded-md bg-[#2e2e2e]">
                 {children}
             </div>

@@ -16,7 +16,7 @@ const extractURLInfo = (url) => {
 }
 
 const URLParser = () => {
-    const [urlToParse, setURLToParse] = useState('https://me:pwd@it-tools.tech:3000/url-parser?key1=value&key2=value2#the-hash');
+    const [urlToParse, setURLToParse] = useState('https://me:pwd@handy.kkimleang.com:3000/url-parser?key1=value&key2=value2#the-hash');
     const [urlInfo, setURLInfo] = useState(extractURLInfo(urlToParse))
     const [urlSearchParams, setURLSearchParams] = useState([])
     const properties = [
