@@ -2,6 +2,7 @@ import { IoIosKey, IoIosLink } from "react-icons/io";
 import { IoQrCodeOutline } from "react-icons/io5";
 import { VscSymbolString } from "react-icons/vsc";
 import { IoIosColorPalette } from "react-icons/io";
+import { LuFileCode } from "react-icons/lu";
 
 export const ToolList = [
     {
@@ -22,6 +23,11 @@ export const ToolList = [
                 title: "Slugify",
                 url: "slugify",
             },
+            {
+                leading: <LuFileCode size={18} />,
+                title: "Base64 Encoder/Decoder",
+                url: "base64-encode-decode",
+            }
         ],
     },
     {

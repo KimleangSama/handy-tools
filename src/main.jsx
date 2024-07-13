@@ -9,6 +9,7 @@ import JWTParser from './components/tools/web/JWTParser.jsx'
 import QRCodeGen from './components/tools/media/QRCode.jsx'
 import Slugify from './components/tools/web/Slugify.jsx'
 import ColorConverter from './components/tools/media/ColorConverter.jsx'
+import Base64EnDeCode from './components/tools/web/Base64EnDeCode.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -19,7 +20,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="url-parser" element={<URLParser />} />
           <Route path='jwt-parser' element={<JWTParser />} />
           <Route path='slugify' element={<Slugify />} />
-          <Route path='qr-code' element={<QRCodeGen />} /> 
+          <Route path='base64-encode-decode' element={<Base64EnDeCode />} />
+          <Route path='qr-code' element={<QRCodeGen />} />
           <Route path='color-converter' element={<ColorConverter />} />
         </Route>
       </Routes>
